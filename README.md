@@ -5,6 +5,10 @@
 - Docker image
 - [Azure Data Studio](https://docs.microsoft.com/ja-jp/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15#download-azure-data-studio)
 
+## Setup the container
+
+Run `./runner start`
+
 ## How to connect using Azure Data Studio
 
 1. `Add connection`

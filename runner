@@ -6,8 +6,17 @@ ARGS=${@:2}
 CONTAINER_NAME=azuresqledge
 
 case $1 in
+"start")
+  ./image-getter.sh
+;;
+"create")
+  ./create-container.sh
+;;
 "down")
   docker stop $CONTAINER_NAME
+;;
+"delete")
+  docker rm $CONTAINER_NAME
 ;;
 *)
   echo Unexpected command: $1
