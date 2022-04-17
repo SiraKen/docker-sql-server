@@ -1,0 +1,15 @@
+#!/bin/bash
+set -Ceux
+
+ARGS=${@:2}
+
+CONTAINER_NAME=azuresqledge
+
+case $1 in
+"down")
+  docker stop $CONTAINER_NAME
+;;
+*)
+  echo Unexpected command: $1
+;;
+esac
